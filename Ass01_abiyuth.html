@@ -3,9 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funiro Furniture</title>
+
+    
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+
+
+header{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+.search-box{
+    background:#F8F0EA;
+    border-radius:8px;
+    padding:8px 15px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    background:transparent;
+}
+
+.icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.icons i{
+    cursor:pointer;
+}
+
+.icons img{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+}
+
+
+
+.hero{
+    width:90%;
+    margin:auto;
+    background:#FDF1E7;
+    height:520px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    position:relative;
+}
+
+.hero-card{
+    width:340px;
+    background:#fff;
+    padding:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    z-index:2;
+}
+
+.hero-card h1{
+    font-size:46px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-card p{
+    color:#777;
+    line-height:28px;
+    margin-bottom:30px;
+}
+
+.hero-card button{
+    width:100%;
+    border:none;
+    background:#FF965B;
+    color:white;
+    padding:15px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:17px;
+}
+
+.hero-image{
+    position:relative;
+}
+
+.hero-image img{
+    width:700px;
+    height:420px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.price-card{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    background:#fff;
+    padding:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.price-card p{
+    color:#777;
+    font-size:14px;
+    margin:5px 0;
+}
+
+
+
+.features{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.feature{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.feature i{
+    font-size:34px;
+    color:#F4A825;
+}
+
+.feature h4{
+    font-size:18px;
+}
+
+.feature p{
+    color:#777;
+    font-size:14px;
+}
+
+@media screen and (max-width:900px)
+
+{
+
+.hero{
+    flex-direction:column;
+    height:auto;
+    padding:50px 20px;
+}
+
+.hero-image img{
+    width:100%;
+    height:auto;
+}
+
+.features{
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    gap:20px;
+}
+
+}
+    </style>
 </head>
+
 <body>
+
+    
+    <header>
+        <div class="logo">Funiro.</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Inspirations</a>
+        </nav>
+
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search for minimalist chair">
+        </div>
+
+        <div class="icons">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <!--<img src="https://i.pravatar.cc/40" alt="">-->
+        </div>
+
+    </header>
+
+
+    
+    <section class="hero">
+
+        <div class="hero-card">
+
+            <h1>High-Quality Furniture Just For You</h1>
+
+            <p>
+                Our furniture is made from selected and best quality
+                materials that are suitable for your dream home.
+            </p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="C:\Users\User\Desktop\assignment\Module_02Assignment\assets\img1.avif"
+                alt="Sofa">
+
+            <div class="price-card">
+                <h4>Bohauss</h4>
+                <p>Luxury big sofa 2-seat</p>
+                <strong>Rs 17,000.00</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+                <h4>High Quality</h4>
+                <p>crafted from top materials</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-square-check"></i>
+            <div>
+                <h4>Warranty Protection</h4>
+                <p>Over 2 years</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h4>Free Shipping</h4>
+                <p>Order over Rs.150</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-headphones"></i>
+            <div>
+                <h4>24 / 7 Support</h4>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 </html>
